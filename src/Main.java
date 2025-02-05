@@ -11,7 +11,14 @@ boolean isPersonExists(Person[] person) - метод, который есть л
 */
 public class Main {
     public static void main(String[] args) {
-        Person person=new Person("Jack", 20);
-        System.out.println(person);
+        Person[] people={
+                new Person("Jack", 20),
+                new Person("nick", 25),
+                new Person("Bob", 21),
+                new Person("Mike", 18),
+        };
+        PersonArrayHandler handler=new PersonArrayHandler(people);
+        System.out.println(handler);
+
     }
 }
