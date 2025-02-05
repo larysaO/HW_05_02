@@ -19,6 +19,7 @@ public class Main {
         };
         PersonArrayHandler handler=new PersonArrayHandler(people);
         System.out.println(handler);
+        System.out.println("Samiy starschiy : " + handler.get(handler.indexOfMaxAgePerson()));
 
     }
 }
