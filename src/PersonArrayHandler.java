@@ -4,6 +4,7 @@ public class PersonArrayHandler {
     private Person[] array;
 
     public PersonArrayHandler(Person[] array) {
+
         this.array = array;
     }
 
@@ -11,21 +12,21 @@ public class PersonArrayHandler {
     public String toString() {
         String result = "";
         for (Person person : array) {
-            result += person + System.lineSeparator();
+            result+= person+ System.lineSeparator();
         }
         return result;
     }
 
     public Person get(int index) {
-        if (index < 0) ||index >= array.length {
+        if (index < 0 || index >= array.length) {
             return null;
 
+        } else {
+            return array[index];
+        }
     }
-        else
-
-    {
-        return array[index];
-    }
+        public int indexOfMaxAgePerson(){
+            return indexOfMaxAgePerson(0);
 }
 
     public int indexOfMaxAgePerson (int index){
@@ -36,6 +37,6 @@ public class PersonArrayHandler {
             }
         }
 
-        return maxIndex>array.length?-1:maxIndex;
+        return maxIndex>=array.length?-1:maxIndex;
     }
 }
